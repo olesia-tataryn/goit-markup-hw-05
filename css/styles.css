@@ -664,6 +664,7 @@ cursor: pointer;
   width: 408px;
   height: 90%;
   min-height: 584px;
+  max-height: 600px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
@@ -747,7 +748,7 @@ cursor: pointer;
   padding-left: 38px;
   font-size: 12px;
   letter-spacing: 0.04em;
-  line-height: 1.16667;
+  line-height: 1.17;
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -785,7 +786,7 @@ cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
@@ -797,16 +798,16 @@ cursor: pointer;
   height: 120px;
   font-size: 12px;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  outline: transparent;
   background-color: transparent;
   padding: 8px 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Roboto", sans-serif;
-  line-height: 1.16667;
-  margin-bottom: 16px;
+  line-height: 1.17;
 }
 
 .order-form-textarea-input:focus {
@@ -816,6 +817,10 @@ cursor: pointer;
 
 .order-form-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
+}
+
+.order-form-checkbox-wrapper {
+  margin-bottom: 24px;
 }
 
 .order-form-custom-checkbox {
@@ -829,20 +834,21 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form-input-checkbox:checked
   + .order-form-field-label
   > .order-form-custom-checkbox {
   background-color: #404bbf;
-  border-color: #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
 .order-form-field-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 24px;
@@ -851,7 +857,7 @@ cursor: pointer;
 .form-privacy-policy {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   line-height: 1.33333;
   text-decoration: underline;
