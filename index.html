@@ -441,7 +441,9 @@
       </section>
     </main>
 
+
     <!-- Page Footer -->
+
     <footer class="page-footer">
       <div class="container page-footer-container">
         <div class="container footer-text-container">
@@ -486,12 +488,35 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-container">
+          <p class="footer-form-title">
+            Subscribe
+          </p>
+          <form class="footer-form">
+            <label class="footer-form-label">
+              <input 
+              class="footer-form-input-email" 
+              name="footer-form-input-email" 
+              type="email"
+              placeholder="E-mail"/>
+            </label>
+            <button type="submit" class="footer-form-submit-button">
+              Subscribe
+              <svg class="footer-form-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
+
+ <!--- MODAL FORM --->
+
     <div class="modal-backdrop">
       <div class="modal">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg class="modal-close-button-cross" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -499,6 +524,7 @@
         <p class="modal-tittle">
           Leave your contacts and we will call you back
         </p>
+        <form class="order-form">
         <div class="order-form-field-wrapper">
           <label class="order-form-field-label" for="username">Name</label>
           <div class="order-form-icon-wrapper">
@@ -572,6 +598,7 @@
           </label>
         </div>
         <button class="order-form-button" type="submit">Send</button>
+      </form>
       </div>
     </div>
   </body>
