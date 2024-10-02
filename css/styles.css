@@ -734,6 +734,7 @@ cursor: pointer;
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+  
 }
 
 .order-form-input {
@@ -778,17 +779,6 @@ cursor: pointer;
 
 .order-form-textarea-wrapper{
   margin-bottom: 16px;
-}
-
-.order-form-textarea-label {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
 }
 
 .order-form-textarea-input {
