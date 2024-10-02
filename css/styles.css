@@ -632,7 +632,7 @@ cursor: pointer;
 
 .footer-form-subscribe-icon{
   margin-left: 16px;
-  
+
 }
 
 /* ======================== MODAL FORM ======================== */
@@ -648,8 +648,8 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -675,7 +675,7 @@ cursor: pointer;
 
 .modal-close-button {
   display: flex;
-  border-radius: 100%;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
   width: 24px;
@@ -722,21 +722,26 @@ cursor: pointer;
   margin-bottom: 16px;
 }
 
+.order-form-field-wrapper{
+  margin-bottom: 8px;
+}
+
 .order-form-field-label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
-  margin: 0;
+  margin-bottom: 4px;
 }
 
 .order-form-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
+  outline: transparent;
   width: 100%;
   height: 40px;
   padding-left: 38px;
@@ -745,7 +750,7 @@ cursor: pointer;
   line-height: 1.16667;
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
-  transition: border-color;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form-input:focus {
@@ -766,12 +771,14 @@ cursor: pointer;
 .order-form-icon {
   position: absolute;
   top: 50%;
-  left: 19px;
+  left: 16px;
   transform: translateY(-50%);
   stroke: #2e2f42;
-  transition-property: stroke, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-textarea-wrapper{
+  margin-bottom: 16px;
 }
 
 .order-form-textarea-label {
